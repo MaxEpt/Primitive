@@ -5,9 +5,11 @@ class Primitive
 {
 
 public:
+    virtual ~Primitive() = 0;
     virtual double getArea() = 0;
-    virtual void doIncrease() = 0;
-    virtual void doMove() = 0;    
+    
+    virtual void doResize(double coeff, bool increase) = 0;
+    virtual void doMove(double dx, double dy) = 0;    
     virtual void printProps() = 0;
 
 };
