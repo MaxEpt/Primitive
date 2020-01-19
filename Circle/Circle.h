@@ -8,6 +8,7 @@ class Circle: public Primitive
 
 public:
     Circle();
+    Circle(double radius);
     ~Circle() override;
     double getArea() override;
     void doResize(double factor, bool increase) override;

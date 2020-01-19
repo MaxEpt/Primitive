@@ -69,7 +69,5 @@ void Rectangle::printProps()
     std::cout << "m_topLeftX=" << m_topLeftX << " m_topLeftY=" << m_topLeftY <<
                  " m_bottomRightX=" << m_bottomRightX << " m_bottomRightY=" << m_bottomRightY <<
                  " width=" << m_width << " height=" << m_height <<
-                 std::endl;
-    
-    std::cout << "===============================================================================" << std::endl;
+                 std::endl;   
 }

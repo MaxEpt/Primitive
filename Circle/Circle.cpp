@@ -18,6 +18,11 @@ Circle::Circle()
     std::cin >> m_radius;
 }
 
+Circle::Circle(double radius)
+{
+    m_radius = radius;
+}
+
 Circle::~Circle()
 {
     // std::cout << "Circle destructor called" <<std::endl;
@@ -29,9 +34,7 @@ double Circle::getArea()
 }
 
 void Circle::doResize(double factor, bool increase)
-{
-    std::cout << "increasing" << std::endl;
-
+{   
     if(increase)
     {
         m_radius = m_radius * factor;
@@ -43,9 +46,7 @@ void Circle::doResize(double factor, bool increase)
 }
 
 void Circle::doMove(double dx, double dy)
-{
-    std::cout << "moving" << std::endl;
-    
+{    
     m_centerX += dx;
     m_centerY += dy; 
 }
@@ -54,5 +55,5 @@ void Circle::printProps()
 {
     std::cout << "Props of current circle are:" << std::endl;
     std::cout << "X=" << m_centerX << " Y=" << m_centerY << " r=" << m_radius << std::endl;
-    std::cout << "========================================" << std::endl;
+    // std::cout << "========================================" << std::endl;
 }
