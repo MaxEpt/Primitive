@@ -20,7 +20,7 @@ Circle::Circle()
 
 Circle::~Circle()
 {
-    std::cout << "Circle destructor called" <<std::endl;
+    // std::cout << "Circle destructor called" <<std::endl;
 }
 
 double Circle::getArea()

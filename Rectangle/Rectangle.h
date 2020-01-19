@@ -14,6 +14,20 @@ public:
     void doMove(double dx, double dy) override;
     void printProps() override;
 
+private:
+    double m_width = 0;
+    double m_height = 0;
+
+    double m_topLeftX = 0;
+    double m_topLeftY = 0;
+    double m_topRighttX = 0;
+    double m_topRightY = 0;
+
+    double m_bottomLeftX = 0;
+    double m_bottomLeftY = 0;
+    double m_bottomRightX = 0;
+    double m_bottomRightY = 0;
+
 
 };
 
